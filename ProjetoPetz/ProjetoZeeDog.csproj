@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED6C94F0-9FE4-4373-9B7A-A4381192175D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoPetz</RootNamespace>
+    <AssemblyName>ProjetoPetz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassAcessoBD.cs" />
+    <Compile Include="ClassAgendamento.cs" />
+    <Compile Include="ClassAnimal.cs" />
+    <Compile Include="ClassCliente.cs" />
+    <Compile Include="ClassExecucao.cs" />
+    <Compile Include="ClassFuncionario.cs" />
+    <Compile Include="ClassRecuperar.cs" />
+    <Compile Include="ClassRelatorio.cs" />
+    <Compile Include="ClassServico.cs" />
+    <Compile Include="FrmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrador.Designer.cs">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBalconista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBalconista.Designer.cs">
+      <DependentUpon>frmBalconista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsqueceu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsqueceu.Designer.cs">
+      <DependentUpon>frmEsqueceu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAgendarS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserAgendarS.Designer.cs">
+      <DependentUpon>UserAgendarS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCliente.Designer.cs">
+      <DependentUpon>UserCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserEmitirR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserEmitirR.Designer.cs">
+      <DependentUpon>UserEmitirR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserExecucao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserExecucao.Designer.cs">
+      <DependentUpon>UserExecucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserExibirDisp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserExibirDisp.Designer.cs">
+      <DependentUpon>UserExibirDisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFuncionario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserFuncionario.Designer.cs">
+      <DependentUpon>UserFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManterA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManterA.Designer.cs">
+      <DependentUpon>UserManterA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManterS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManterS.Designer.cs">
+      <DependentUpon>UserManterS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserTelaAdm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserTelaAdm.Designer.cs">
+      <DependentUpon>UserTelaAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserTelaInicial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserTelaInicial.Designer.cs">
+      <DependentUpon>UserTelaInicial.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAdministrador.resx">
+      <DependentUpon>FrmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBalconista.resx">
+      <DependentUpon>frmBalconista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsqueceu.resx">
+      <DependentUpon>frmEsqueceu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserAgendarS.resx">
+      <DependentUpon>UserAgendarS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCliente.resx">
+      <DependentUpon>UserCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEmitirR.resx">
+      <DependentUpon>UserEmitirR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserExecucao.resx">
+      <DependentUpon>UserExecucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserExibirDisp.resx">
+      <DependentUpon>UserExibirDisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFuncionario.resx">
+      <DependentUpon>UserFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManterA.resx">
+      <DependentUpon>UserManterA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManterS.resx">
+      <DependentUpon>UserManterS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserTelaAdm.resx">
+      <DependentUpon>UserTelaAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserTelaInicial.resx">
+      <DependentUpon>UserTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
